@@ -1,26 +1,42 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Nerzpaints colour palette */
+  --primary: #8b1e3f;
+  --secondary: #ffb800;
+  --dark: #2a2a2a;
+  --light: #f8f9fa;
+  --gray: #e5e5e5;
+  --success: #28a745;
+
+  --background: var(--light);
+  --foreground: var(--dark);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-sans: var(--font-open-sans);
+  --font-heading: var(--font-montserrat);
+  --font-accent: var(--font-playfair);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading), sans-serif;
+  font-weight: 700;
+}
+
+.accent {
+  font-family: var(--font-accent), serif;
 }
