@@ -1,4 +1,3 @@
-import dynamic from "next/dynamic";
 import Hero from "./home/Hero";
 import Newsletter from "./home/Newsletter";
 import ClientPromoBanner from "./home/ClientPromoBanner";

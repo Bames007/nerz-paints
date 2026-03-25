@@ -1,11 +1,12 @@
 "use client";
-import React from "react";
+
 import { motion, AnimatePresence } from "framer-motion";
-import { X, Heart, Trash2, ShoppingCart, ArrowRight, Wand } from "lucide-react";
+
 import Image from "next/image";
 import { useCart } from "../context/CartContext";
 import { products } from "../data/products";
 import toast from "react-hot-toast";
+import { ArrowRight, Heart, ShoppingCart, Trash2, Wand, X } from "lucide-react";
 
 interface WishlistModalProps {
   isOpen: boolean;

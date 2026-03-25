@@ -10,7 +10,7 @@ const families = ["All", "Neutral", "Blue", "Green", "Red", "Earth", "Grey"];
 
 const ColourGallery = () => {
   const [selectedFamily, setSelectedFamily] = useState("All");
-  const [hoveredColour, setHoveredColour] = useState<string | null>(null);
+  const [, setHoveredColour] = useState<string | null>(null);
   const [selectedColor, setSelectedColor] = useState<any>(null);
   const [modalOpen, setModalOpen] = useState(false);
 

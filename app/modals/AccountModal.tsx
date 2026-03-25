@@ -1,7 +1,9 @@
 "use client";
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { X, Mail, Lock, User, ArrowRight, Chrome, Github } from "lucide-react";
+import { X, Mail, Lock, User, ArrowRight } from "lucide-react";
+import { FaChrome } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa";
 
 interface AccountModalProps {
   isOpen: boolean;
@@ -140,10 +142,10 @@ const AccountModal = ({ isOpen, onClose }: AccountModalProps) => {
                 </div>
                 <div className="grid grid-cols-2 gap-4">
                   <button className="flex items-center justify-center gap-3 py-4 border-2 border-slate-50 rounded-2xl hover:bg-slate-50 transition-all font-bold text-slate-600 text-sm">
-                    <Chrome className="w-4 h-4 text-red-500" /> Google
+                    <FaChrome className="w-4 h-4 text-red-500" /> Google
                   </button>
                   <button className="flex items-center justify-center gap-3 py-4 border-2 border-slate-50 rounded-2xl hover:bg-slate-50 transition-all font-bold text-slate-600 text-sm">
-                    <Github className="w-4 h-4 text-slate-900" /> GitHub
+                    <FaGithub className="w-4 h-4 text-slate-900" /> GitHub
                   </button>
                 </div>
               </div>
